@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
     const [token, setToken] = useState(localStorage.getItem("token"));
     const [user, setUser] = useState("")
-    const [isLoding, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(true)
     const AuthorizationToken =`Bearer ${token}`
     console.log(AuthorizationToken)
 
@@ -56,7 +56,7 @@ export const AuthProvider = ({ children }) => {
     }, [])
 
     return (
-        <AuthContext.Provider value={{ storeTokenInLS, LogoutUser, isLoggedIn, user,AuthorizationToken, API, isLoding }}>
+        <AuthContext.Provider value={{ storeTokenInLS, LogoutUser, isLoggedIn, user,AuthorizationToken, API, isLoading }}>
             {children}
         </AuthContext.Provider>
     )

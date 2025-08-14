@@ -8,10 +8,10 @@ import { useAuth } from '../../store/Auth';
 
 const AdminLayout = () => {
   
-  const {user, isLoding} = useAuth();
+  const {user, isLoading} = useAuth();
   console.log(user)
   
-  if(isLoding){
+  if(isLoading){
     return <h1>Loading...</h1>
   }
   if(!user.isAdmin){
