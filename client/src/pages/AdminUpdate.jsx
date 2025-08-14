@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import { useAuth } from "../store/auth";
+import { useAuth } from "../store/Auth";
 
 export const AdminUpdate = () => {
   const [data, setData] = useState({

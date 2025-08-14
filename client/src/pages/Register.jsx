@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify'
-import { useAuth } from '../store/auth';
+import { useAuth } from '../store/Auth';
 
 const Register = () => {
     const navigate = useNavigate()

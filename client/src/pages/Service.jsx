@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { useAuth } from '../store/auth';
+import { useAuth } from '../store/Auth';
 
 const Service = () => {
   const {API} = useAuth()

@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa6";
 import { MdPermContactCalendar } from "react-icons/md";
 import { AiFillCustomerService } from "react-icons/ai";
 import { IoMdHome } from "react-icons/io";
-import { useAuth } from '../../store/auth';
+import { useAuth } from '../../store/Auth';
 
 const AdminLayout = () => {
   

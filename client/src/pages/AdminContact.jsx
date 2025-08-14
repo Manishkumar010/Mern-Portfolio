@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useAuth } from "../store/auth";
+import { useAuth } from "../store/Auth";
 import { toast } from "react-toastify";
 
  const AdminContacts = () => {
