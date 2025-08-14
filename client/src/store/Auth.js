@@ -7,10 +7,10 @@ export const AuthProvider = ({ children }) => {
     const [token, setToken] = useState(localStorage.getItem("token"));
     const [user, setUser] = useState("")
     const [isLoading, setIsLoading] = useState(true)
-    const AuthorizationToken =`Bearer ${token}`
+    const AuthorizationToken = `Bearer ${token}`
     console.log(AuthorizationToken)
 
-     const API = "https://mern-portfolio-hrh2.onrender.com";
+    const API = "https://mern-portfolio-hrh2.onrender.com";
 
     const storeTokenInLS = (serverToken) => {
         setToken(serverToken)
@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
             const response = await fetch(`${API}/api/auth/user`, {
                 method: "GET",
                 headers: {
-                    Authorization:AuthorizationToken
+                    Authorization: AuthorizationToken
                 }
             });
 
@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
                 const data = await response.json();
                 setUser(data.userData);
                 setIsLoading(false)
-            }else{
+            } else {
                 setIsLoading(false)
             }
 
@@ -56,7 +56,14 @@ export const AuthProvider = ({ children }) => {
     }, [])
 
     return (
-        <AuthContext.Provider value={{ storeTokenInLS, LogoutUser, isLoggedIn, user,AuthorizationToken, API, isLoading }}>
+        <AuthContext.Provider value={{
+            storeTokenInLS,
+            LogoutUser,
+            isLoggedIn,
+            user,
+            AuthorizationToken,
+             API, isLoading,
+        }}>
             {children}
         </AuthContext.Provider>
     )
