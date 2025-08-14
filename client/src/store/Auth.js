@@ -62,7 +62,8 @@ export const AuthProvider = ({ children }) => {
             isLoggedIn,
             user,
             AuthorizationToken,
-             API, isLoading,
+            API,
+            isLoading
         }}>
             {children}
         </AuthContext.Provider>
