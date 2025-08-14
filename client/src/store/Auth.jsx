@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
     const AuthorizationToken =`Bearer ${token}`
     console.log(AuthorizationToken)
 
-     const API = "http://localhost:5000";
+     const API = "https://mern-portfolio-hrh2.onrender.com";
 
     const storeTokenInLS = (serverToken) => {
         setToken(serverToken)
