@@ -47,7 +47,6 @@ export const AuthProvider = ({ children }) => {
         userAuthentication();
     }, []);
 
-    // Yaha return ko clean format me rakho
     return (
         <AuthContext.Provider
             value={{
