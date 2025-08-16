@@ -11,7 +11,7 @@ const cors = require('cors');
 const app = express();
 
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: "https://mern-portfolio-1-1y6d.onrender.com",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     Credentials: true
 }
