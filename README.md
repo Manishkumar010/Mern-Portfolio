@@ -60,17 +60,16 @@ Check it out here: https://mern-portfolio-1-1y6d.onrender.com
 3. **Local Setup & Run**  
    ```bash
    # Clone the repo
-   git clone https://github.com/Manishkumar010/EXPENSETRACKER-APP.git
-   cd EXPENSETRACKER-APP
+   https://github.com/Manishkumar010/Mern-Portfolio.git
+   cd Mern-portfolio
    
    # Frontend
-   cd frontend
-   cd expense-ui
+   cd client
    npm install
    npm start   # Runs on http://localhost:8000
 
    # Backend
-   cd backend
+   cd server
    npm install
    # Create a .env file with:
    # MONGO_URI=<your MongoDB connection string>
